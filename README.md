@@ -61,3 +61,5 @@ machine — numbers are machine-specific, re-run to reproduce:
 | miss, odd target in even array | 1,000,000 | ~243 |
 | hit, leftmost of duplicates | 1,000,000 | ~246 |
 | hit, small array | 100 | ~60 |
+
+See [BENCHMARK.md](BENCHMARK.md) for full methodology, machine details, scaling analysis and cross-language comparison.
