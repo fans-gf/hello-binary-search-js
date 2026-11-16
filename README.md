@@ -48,3 +48,16 @@ seeded randomized property tests against `Array.prototype.indexOf` /
 
 Tests also run on every push via GitHub Actions (see
 [.github/workflows/test.yml](.github/workflows/test.yml)).
+
+## Benchmarks
+
+`node bench/benchmark.mjs` (Node 24, best-of-5 after warmup; 1,024 seeded
+targets cycled, 51,200 ops per rep). Example measurement on the author's
+machine — numbers are machine-specific, re-run to reproduce:
+
+| Scenario | n | ns/op |
+|---|---|---|
+| hit, unique elements | 1,000,000 | ~255 |
+| miss, odd target in even array | 1,000,000 | ~243 |
+| hit, leftmost of duplicates | 1,000,000 | ~246 |
+| hit, small array | 100 | ~60 |
