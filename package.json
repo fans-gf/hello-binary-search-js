@@ -1,0 +1,16 @@
+{
+  "name": "hello-binary-search-js",
+  "version": "1.0.0",
+  "description": "Leftmost-exact-match binary search in JavaScript",
+  "type": "module",
+  "main": "src/binarySearch.js",
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "binary-search",
+    "lower-bound",
+    "leftmost",
+    "algorithm"
+  ]
+}
